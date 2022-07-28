@@ -4,81 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRO BOSS</title>
-    <!-- bootsrtap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <title>Pro BOSS</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
 
 
 </head>
-
-
-
 <body>
     <header>
-        
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><span class="fs-1 fw-bold"> Pro Boss</span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+              <a href="https://flowbite.com/" class="flex items-center">
+                  <!-- <img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"> -->
+                  <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Pro BOSS</span>
+              </a>
+              <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Courses</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Deals</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Success</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Register</a>
+                  </li>
+
+                </ul>
+              </div> 
+             <div>
+                <button class="bg-blue-100 py-4 px-7 text-blue-700 font-bold rounded-xl border-5 border-solid border-blue-700  hover:border-indigo-300"> 
+                    Register
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Courses</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Deals</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Success</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
+             </div>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Register</a>
-                            </li>
-
-                        </ul>
-                        <form class="d-flex" role="search">
-
-                            <button class="btn btn-outline-info" type="">Register</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-        
+            </div>
+          </nav>
     </header>
-
 
     <main>
 
+        <!-- slider section -->
+        <section class="m-8 p-8">
+
+            <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark relative"
+                data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators absolute right-10 bottom-0 left-10 flex justify-center p-0 mb-4">
+                    <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                    <button data-bs-target="#carouselDarkVariant" data-bs-slide-to="2" aria-label="Slide 1"></button>
+                </div>
+
+                <!-- Inner -->
+                <div class="carousel-inner relative w-full  overflow-hidden">
+                    <!-- Single item 1 -->
+                    <div class="carousel-item active relative float-center w-full ">
+                        <img src="images/cover/cover-1.png" class="block w-full " alt="" />
+                        <div class="carousel-caption hidden md:grid  absolute text-center carousel-center ">
+                            <h1 class="text-9xl text-white">Get Started Digital Learning</h1>
+
+                            <p class="text-3xl text-white">t is a long established fact that a reader will be distracted
+                                by
+                                the readable content of a page when looking at its layout.</p>
+
+                            <div>
+                                <button class="m-8 p-4 bg-blue-500 text-2xl border-2 rounded ">
+                                    <span class="m-4 p-2 text-white">Get started</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Single item 2-->
+                    <div class="carousel-item relative float-left w-full">
+                        <img src="images/cover/cover-2.jpg" class="block w-full" alt="" />
+                        <div class="carousel-caption hidden md:block absolute text-center carousel-center">
+                            <h1 class="text-9xl text-white">Get Started Digital Learning</h1>
+
+                            <p class="text-3xl text-white">t is a long established fact that a reader will be distracted
+                                by
+                                the readable content of a page when looking at its layout.</p>
+
+                            <div>
+                                <button class="m-8 p-4 bg-blue-500 text-2xl border-2 rounded ">
+                                    <span class="m-4 p-2 text-white">Get started</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single item 3 -->
+                    <div class="carousel-item relative float-left w-full">
+                        <img src="images/cover/cover-3.jpg" class="block w-full" alt="Woman Reading a Book" />
+                        <div class="carousel-caption hidden md:block absolute text-center carousel-center">
+                            <h1 class="text-9xl text-white">Get Started Digital Learning</h1>
+
+                            <p class="text-3xl text-white">t is a long established fact that a reader will be distracted
+                                by
+                                the readable content of a page when looking at its layout.</p>
+
+                            <div>
+                                <button class="m-8 p-4 bg-blue-500 text-2xl border-2 rounded ">
+                                    <span class="m-4 p-2 text-white">Get started</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- button get strat -->
+
+                </div>
+                <!-- Inner -->
+
+                <!-- Controls -->
+                <button
+                    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button" data-bs-target="#carouselDarkVariant" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                    type="button" data-bs-target="#carouselDarkVariant" data-bs-slide="next">
+                    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 
     </main>
-
-
-
-    <footer>
-
-
-    </footer>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>

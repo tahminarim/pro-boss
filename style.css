@@ -8,9 +8,7 @@ transform: translateY(-50%);
 
 }
 
-.hide {
-    display: none;
-}
+
 
 
 /* footer style */
@@ -31,6 +29,35 @@ footer>nav li {
     margin-right: 20px;
     padding: 0px 10px;
 }
+
+
+/* mobile device */
+
+@media only screen and (max-width:688px) {
+    .middletext h1{
+       
+        font-size: 25px;
+
+    }
+    .middletext p{
+        font-size: 10px;
+
+
+    }
+
+    .photo img{
+        width: 900px;
+        height: 400px;
+
+    }
+    .getbtn{
+        width: 80px;
+        height: 70px;
+
+    }
+    
+}
+    
 
 
 
